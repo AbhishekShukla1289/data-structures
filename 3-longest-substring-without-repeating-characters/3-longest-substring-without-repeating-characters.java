@@ -20,7 +20,7 @@ class Solution {
         }
         
         max = Math.max(max,high - low);
-        System.out.println(map);
+
         return max;
     }
 }
