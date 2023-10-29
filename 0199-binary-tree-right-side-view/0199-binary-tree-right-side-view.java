@@ -27,7 +27,10 @@ class Solution {
         //logic
         if(level == result.size())
             result.add(root.val);
-        dfs(root.right, level+1);
+        else{
+            result.set(level, root.val);
+        }
         dfs(root.left, level+1);
+        dfs(root.right, level+1);
     } 
 }
