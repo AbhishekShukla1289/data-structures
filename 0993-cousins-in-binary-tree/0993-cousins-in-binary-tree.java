@@ -24,7 +24,7 @@ class Solution {
             boolean y_found = false;
             for(int i = 0; i < size; i++){
                 TreeNode curr = q.poll();
-                TreeNode parent = curr;
+                //TreeNode parent = curr;
                 if(curr.val == x)
                     x_found = true;
                 else if(curr.val == y)
