@@ -27,10 +27,10 @@ class Solution {
         if(root.left == null && root.right == null) return 1;
         
         // find the min depth of the left and right subtrees
-        int leftDepth = dfs(root.left);
-        int rightDepth = dfs(root.right);
+//         int leftDepth = dfs(root.left);
+//         int rightDepth = dfs(root.right);
         
         // return the minimum of the two depths plus one for the current node
-        return 1 + Math.min(leftDepth, rightDepth);
+        return 1 + Math.min(dfs(root.left), dfs(root.right));
     }
 }
